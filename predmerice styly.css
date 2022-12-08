@@ -1,18 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
+  font-size: 62.5%;
+  --header1: calc(3rem + 1vw);
+  --header2: calc(2.4rem + 1vw);
+  --header3: calc(2.1rem + 1vw);
+  --header4: calc(1.5rem + 1vw);
+  --text: calc(1.2rem + 1vw);
+  --card-text: calc(0.5rem + 1vw);
+  --big: calc(6rem + 1vw);
+  --url-color: #e6e6e6;
+  --header-text: #394053;
+  --gray-text: #4e4a59;
+  --background-color: #6e6362;
   scroll-behavior: smooth;
+}
+h1 {
+  font-family: sans-serif;
+  font-size: var(--header1);
+  padding: 10%;
+}
+/* RESPONSIVE */
+@media screen and (min-width: 768px) {
+  .authors__article {
+    width: 50rem;
+    height: 20rem;
+    margin-left: 10rem;
+    margin-right: 2rem;
+    font-size: var(--text);
+    flex-direction: row;
+    background-color: rgb(235, 235, 235);
+    padding-left: 1rem;
+    padding-right: 0.4rem;
+    margin-bottom: 1rem;
+  }
 }
 
 nav{
   
-  overflow: hidden;
-  padding: 20%;
-  text-align: center;
+  
+  padding: 10%;
+  text-align: left;
   background-color: #ce3030;
 }
 
 a {
-  padding: 10%;
-  text-align: center;
+  padding: 5%;
+  text-align: left;
   text-decoration: none;
   text-transform: uppercase;
   font-family: sans-serif;
@@ -30,23 +68,23 @@ a {
 }
 
 main {
-  background-color: #66d9ff;
+  background-color: #394053;
   
 }
 
 section {
-  background-color: #80bfff;
+  background-color: #e6e6e6;
   
 }
 
 body {
-  background-color: white;
+  background-color: #e6e6e6;
 }
 
 header {
-  background-color: #ffffff;
+  background-color:#ffffff;
   
-  text-align: left;
+  text-align: center;
 }
 
 aside {
@@ -63,43 +101,4 @@ div {
   padding: 10%;
   image-rendering: auto;
   image-resolution: 100;
-}
-
-h1 {
-  
-  
-  font-size: 100%;
-  font-family: sans-serif;
-  /* background-color:  #66ccff;*/
-  text-align: right;
-  
-  text-transform: uppercase;
-}
-
-h2 {
-
-  font-size: 26px;
-  font-family: sans-serif;
-
-}
-
-h3 {
-
-  font-size: 18px;
-  font-family: sans-serif;
-
-}
-
-h4 {
-
-  font-size: 20px;
-  font-family: sans-serif;
-  text-align: center;
-  
-
-}
-p {
-  font-size: 16px;
-  font-family: sans-serif;
-  text-align: justify;
 }
