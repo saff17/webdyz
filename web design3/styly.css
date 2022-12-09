@@ -1,0 +1,125 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ /* globalní nastavení */
+html {
+  font-size: 62.5%;
+  --header1: calc(3rem + 1vw);
+  --header2: calc(2.4rem + 1vw);
+  --header3: calc(2.1rem + 1vw);
+  --header4: calc(1.5rem + 1vw);
+  --text: calc(1.2rem + 1vw);
+  --card-text: calc(0.5rem + 1vw);
+  --big: calc(6rem + 1vw);
+  
+  --text-cerna: #000000;
+
+  --pozadi-zluta: rgba(216, 216, 98, 0.327);
+  --header-text: #394053;
+  --pozadi-cervene: #b41c1c;
+  --pozadi-svetle: #1984d6;
+  --pozadi-tmave: #d9cfc1;
+
+  scroll-behavior: smooth;
+}
+  
+img{
+  box-align: left;
+  padding: 0.8%;
+}
+/* jezdící menu */ 
+header{
+  background-color: var(--pozadi-tmave);
+  
+}
+li{
+  list-style: none;
+}
+a{
+  font-size: var(--header4);
+  
+  color: var(--text);
+  text-decoration: none;
+}
+
+.MenuDiv{
+box-shadow: 0px 1px 3px var(--text-cerna);
+background-color: var(--pozadi-zluta);
+}
+
+.navbar{
+  
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  max-width: 1224px;
+  width: 90%;
+  margin: 0 auto;
+  
+}
+.nav-nazev{
+  font-size: 2.5rem;
+
+}
+.nav-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--pozadi-svetle);
+}
+.nav-link{
+  transition: 0.3s ease-out;
+}
+.nav-link:hover{
+  color:  white;
+}
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: var(--text-cerna);
+}
+
+@media(max-width:1024px){
+  .hamburger{
+    display: block;
+  }
+
+ .hamburger.active .bar{
+    transform:  rotate(180deg);
+    background-color: var(--pozadi-tmave);
+  }
+
+ .nav-menu{
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: var(--pozadi-tmave);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-menu.active{
+    left: 0;
+  }
+
+ .nav-item{
+    margin: 16px 0;
+  }
+}
+
+
