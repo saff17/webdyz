@@ -59,6 +59,7 @@ article{
 /* upravovaní textu */
 h1{
   font-size: var(--header1);
+  color: var(--text-cerna);
 }
 h2{
   background-color: var(--pozadi-tmave);
@@ -67,7 +68,6 @@ h2{
   text-align: center;
   justify-content: center;
   display:block;
-
   padding: 3%;
 }
 
@@ -76,7 +76,7 @@ h3{
 }
 a{
   font-size: var(--header4);
-  color: var(--text);
+  color: var(--pozadi-svetle);
   text-decoration: none;
 }
 
@@ -108,6 +108,7 @@ a{
   padding-bottom: 2%;
 }
 .nav-link{
+  color: var(--text-cerna);
   transition: 0.3s ease-out;
 }
 .nav-link:hover{
@@ -123,7 +124,7 @@ a{
   width: 25px;
   height: 3.8px;
   margin: 2.6px auto;
-  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   transition: all 0.3s ease;
   background-color: var(--text-cerna);
 }
@@ -142,7 +143,6 @@ a{
   display: inline-block;
   cursor: pointer;
   border-radius: 0.5rem;
-  size: 10%;
   margin: 0;
 }
 
@@ -212,7 +212,7 @@ a{
     justify-content: center;
     font-size: var(--text);
     background-color: var(--pozadi-tmave);
-    size: 10%;
+    resize: 10%;
     margin: 0;
   }
 }
@@ -264,8 +264,8 @@ figcaption{
   font-size: var(--header1);
   background-color: var(--pozadi-tmave);
   padding-bottom: 1%;
-  padding-top: 2,5%;
-  padding:0,5%;
+  padding-top: 2.5%;
+  padding:0.5%;
 }
 .flexbox-zast{
   flex-direction: column;
@@ -297,7 +297,6 @@ figcaption{
   justify-content: right;
   font-size: var(--text);
   background-color: var(--pozadi-tmave);
-  size: 10%;
   margin: 0;
 }
 
@@ -423,8 +422,8 @@ figcaption{
   font-size: var(--header1);
   background-color: var(--pozadi-tmave);
   padding-bottom: 1%;
-  padding-top: 2,5%;
-  padding:0,5%;
+  padding-top: 2.5%;
+  padding:0.5%;
 }
 
 .img-zast{
