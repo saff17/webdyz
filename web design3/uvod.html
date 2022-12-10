@@ -12,7 +12,7 @@
 <body>
    <div class="MenuDiv">
        <nav class="navbar"> 
-        <img src="./imgs/znak.svg" alt="městský znak obce Zaodhadice pod Severou" style="width:10%;height:10%;">    
+        <img src="./imgs/znak.svg" alt="městský znak obce Zaodhadice pod Severou" class= "znak">    
           <a href="#" class="nav-nazev"><h1>Zaodhadice pod Severou</h1></a>
           <ul class="nav-menu">
             <li class="nav-item">
@@ -22,10 +22,13 @@
                 <a href="galerie.html" class="nav-link">Galerie</a>
              </li>
              <li class="nav-item">
-                <a href="#" class="nav-link">Úřední deska</a>
+                <a href="oznameni.html" class="nav-link">Oznámení</a>
              </li>
              <li class="nav-item">
-                <a href="#" class="nav-link">Contact</a>
+               <a href="zastupitelstvo.html" class="nav-link">Zastupitelstvo</a>
+            </li>
+             <li class="nav-item">
+                <a href="./kontakty.html" class="nav-link">Kontakt</a>
              </li>
           </ul>
           <div class="hamburger">
@@ -36,77 +39,82 @@
        </nav>
    </div>
    <main>
-      <section>
+      <section class="hledat">
+         <input type="text" value="" placeholder="Najít na stránce" id="search"/>
+         <a href="./vysledky.html"><button type="submit" class="hledat_btn">Hledat</a>
+      </section>
+      
       <h2> Aktuality </h2>
+      <section class="clanek">   
          <article>
             <h3>Může za to globální oteplování?</h3>
-            <p>Dnes je velmi chladno a taky zima. Tomu se říká prosinec, který dneska zrovna je. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus rhoncus. Integer rutrum, orci vestibulum ullamcorper ultricies, lacus quam ultricies odio, vitae placerat pede sem sit amet enim. Nulla quis diam. Fusce consectetuer risus a nunc. Feliz navidad.</p>
-         </article>
+            <aside>10.12.2022</aside>
+            <p>Dnes je velmi chladno a taky zima. Tomu se říká prosinec, který dneska zrovna je. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus rhoncus. Integer rutrum, orci vestibulum ullamcorper ultricies, lacus quam ultricies odio, vitae placerat pede sem sit amet enim. Nulla quis diam. Fusce consectetuer risus a nunc. Feliz navidad. <a href="clanek.html">Více...</a></p>
+         </article>      
          <article>
             <h3>Bláznivý příběh se stal dnes jednomu obyvateli!</h3>
-            <p>Když šel pan Janák po vsi, vzpomněl si, že zapomněl koupit mléko. Tak šel k místnímu prodavači potravin a tam mlíko také neměli. Takže si musel dát ke křupkám vodu. Dále už jen lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus rhoncus. Integer rutrum, orci vestibulum ullamcorper ultricies, lacus quam ultricies odio, vitae placerat pede sem sit amet enim. Nulla quis diam. Fusce consectetuer risus a nunc. Feliz navidad.</p>
+            <aside>10.10.2022</aside>
+            <p>Když šel pan Janák po vsi, vzpomněl si, že zapomněl koupit mléko. Tak šel k místnímu prodavači potravin a tam mléko také neměli. Takže si musel dát ke křupkám vodu. Dále už jen lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus rhoncus. Integer rutrum, orci vestibulum ullamcorper ultricies, lacus quam ultricies odio, vitae placerat pede sem sit amet enim. Nulla quis diam. Fusce consectetuer risus a nunc. Feliz navidad. <a href="clanek.html">Více...</a></p>
          </article>
          <article>
             <h3>Zajimavá fatka o vesnici</h3>
-            <p>V této vesnici rostou alespoň 3 stromy. Pokud obyvatelé vyjdou ven z domova budou venku.Když je zateženo nad Zaodhadicemi tak jsou nahoře mraky. Také se v této vesnici našlo Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus rhoncus. Integer rutrum, orci vestibulum ullamcorper ultricies, lacus quam ultricies odio, vitae placerat pede sem sit amet enim. Nulla quis diam. Fusce consectetuer risus a nunc. Feliz navidad.</p>
+            <aside>9.9.2022</aside>
+            <p>V této vesnici rostou alespoň 3 stromy. Pokud obyvatelé vyjdou ven z domova budou venku.Když je zataženo nad Zaodhadicemi tak jsou nahoře mraky. Také se v této vesnici našlo Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus rhoncus. Integer rutrum, orci vestibulum ullamcorper ultricies, lacus quam ultricies odio, vitae placerat pede sem sit amet enim. Nulla quis diam. Fusce consectetuer risus a nunc. Feliz navidad. <a href="clanek.html">Více...</a></p>
          </article>
          <article>
             <h3>Zdražování energií?</h3>
-            <p>Kvůli zdražení el. energie bude veřejné osvětlení rozsvěceno v kratších intervalech. Tudíž bude svítit pouze jen v ranních hodinách od 4:20 do 5:29 a dále od 20:00 do 20:30. Kvůli elektrině také musíme lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus rhoncus. Integer rutrum, orci vestibulum ullamcorper ultricies, lacus quam ultricies odio, vitae placerat pede sem sit amet enim. Nulla quis diam. Fusce consectetuer risus a nunc. Feliz navidad. </p>
+            <aside>8.8.2022</aside>
+            <p>Kvůli zdražení el. energie bude veřejné osvětlení rozsvěceno v kratších intervalech. Tudíž bude svítit pouze jen v ranních hodinách od 4:20 do 5:29 a dále od 20:00 do 20:30. Kvůli elektrině také musíme lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus rhoncus. Integer rutrum, orci vestibulum ullamcorper ultricies, lacus quam ultricies odio, vitae placerat pede sem sit amet enim. Nulla quis diam. Fusce consectetuer risus a nunc. Feliz navidad. <a href="clanek.html">Více...</a></p>
          </article>
          <article>
             <h3>Rozsvícení Vánočního stromečku</h3>
-            <p>Každoroční tradice a důvod k vypití 10 svařáků jako vždy nalákala spoustu obyvatel k zhlédnutí slavnostního rozsvícen stromečku. Jelikož byl strom velký jako lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus rhoncus. Integer rutrum, orci vestibulum ullamcorper ultricies, lacus quam ultricies odio, vitae placerat pede sem sit amet enim. Nulla quis diam. Fusce consectetuer risus a nunc. Aliquam erat volutpat. Feliz navidad.</p>
-            
+            <aside>10.12.2022</aside>
+            <p>Každoroční tradice a důvod k vypití 10 svařáků jako vždy nalákala spoustu obyvatel k zhlédnutí slavnostního rozsvícen stromečku. Jelikož byl strom velký jako lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus rhoncus. Integer rutrum, orci vestibulum ullamcorper ultricies, lacus quam ultricies odio, vitae placerat pede sem sit amet enim. Nulla quis diam. Fusce consectetuer risus a nunc. Aliquam erat volutpat. Feliz navidad. <a href="clanek.html">Více...</a></p>
          </article>
       </section>
    </main>
    <footer>
          <div class="flexbox">
             <div class="box1">
-               <h3>Kontakty</h3>
+               <h4>Kontakty</h4>
                
-               Obecní úřad Zaodhadice pod Severou 747
+               <p> Obecní úřad Zaodhadice pod Severou 747
                <br>
                420 69 Zaodhadice pod Severou
                <br>
                <br>
                Tel.: +420 987 654 321
                <br>
-               E-mail: info@zaodhadice.cz
+               E-mail: info@zaodhadice.cz </p>
             </div>
             
             <div class="box2">
-               <h3>Twitter</h3>
-               <a href="#"><img src="./imgs/logo_link.png" alt="link na sociální síť Twitter" style="width:80%;height:24%;"></a>
+               <h4>Twitter</h4>
+               <a href="#"><img src="./imgs/logo_link.png" alt="link na sociální síť Twitter" class="footer-img"></a>
             </div>
             <div class="box3">
-               <h3>Instagram</h3>
+               <h4>Instagram</h4>
                
-               <a href="#"><img src="./imgs/logo_link.png" alt="link na sociální síť Instagram" style="width:60%;height:25%;"></a>
+               <a href="#"><img src="./imgs/logo_link.png" alt="link na sociální síť Instagram"  class="footer-img"></a>
             </div>
             <div class="box4">
-               <h3>Doprava</h3>
+               <h4>Doprava</h4>
                
-               <a href="#"><img src="./imgs/logo_link.png" alt="link na dopravní portál Idos" style="width:80%; height:25%;"></a>
+               <a href="#"><img src="./imgs/logo_link.png" alt="link na dopravní portál Idos" class="footer-img"></a>
             </div>
             <div class="box5">
-               <h3>Úřední hodiny</h3>
-               
+               <h4>Úřední hodiny</h4>
+               <p>
                Po: 07:00-11:30 / 12:30-17:00
                <br>
-               St: 07:00-11:30 / 12:30-17:00
+               St: 07:00-11:30 / 12:30-17:00 </p>
             </div>
          </div>
    </footer>
    <footer class="footer2">
-      <h4>Oficiální stránky obce Zaodhadice pod Severou &copy; 2022</h4>
+      <h4>Obec Zaodhadice pod Severou &copy; 2022</h4>
       <h4>Studentský projekt - Web design, PEF ČZU</h4>
    </footer>
-   
-
-
- 
 </body>
 <script src="./menu.js"></script>
 </html>
