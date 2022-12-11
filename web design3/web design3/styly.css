@@ -1,0 +1,478 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ /* globalní nastavení */
+html {
+  font-size: 62.5%;
+  --header1: calc(3rem + 1vw);
+  --header2: calc(2.4rem + 1vw);
+  --header3: calc(2.1rem + 1vw);
+  --header4: calc(1.5rem + 1vw);
+  --text: calc(1.2rem + 1vw);
+  --card-text: calc(0.5rem + 1vw);
+  --big: calc(6rem + 1vw);
+  --text-cerna: #000000;
+  --pozadi-zluta: rgb(255, 255, 89);
+  --header-text: #394053;
+  --pozadi-cervene: #b41c1c;
+  --pozadi-svetle: #f1ecec;
+  --pozadi-tmave: #d9cfc1;
+  --url-color: rgb(0, 3, 175);
+  scroll-behavior: smooth;
+}
+
+aside {
+  background-color: var(--pozadi-svetle);
+  font-style: italic;
+  font-size: 55%; 
+}
+/* upravování sekcí */
+
+.znak{
+  width:10%;
+  height:10%;
+  padding: 1%;
+}
+.button {
+  background-color:var(--header-text);
+  color: white;
+  padding: 1% 4%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: var(--text);
+  border-radius: 0.5rem;
+}
+
+li{
+  text-align: center;
+  list-style: none;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+p{
+  font-size: var(--text);
+}
+article h4{
+  color: var(--text-cerna);
+}
+
+article{
+  font-size: var(--text);
+  background-color: var(--pozadi-svetle);
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  
+}
+/* upravovaní textu */
+h1{
+  font-size: var(--header1);
+  color: var(--text-cerna);
+}
+h2{
+  background-color: var(--pozadi-tmave);
+  font-size: var(--header2);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  justify-content: center;
+  display:block;
+  padding: 3%;
+}
+
+h3{
+  font-family:Arial, Helvetica, sans-serif
+}
+h4{
+  font-weight: bold;
+  color: var(--pozadi-cervene);
+}
+a{
+  font-size: var(--header4);
+  color: var(--pozadi-svetle);
+  text-decoration: none;
+}
+
+.navbar{
+  min-height: 4%;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.navbar a{
+  position: relative;
+
+}
+
+.nav-nazev{
+  font-size: 2.5rem;
+}
+.nav-menu{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  justify-content: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.nav-link{
+  color: var(--text-cerna);
+  transition: 0.3s ease-out;
+}
+.nav-link:hover{
+  color:  white;
+}
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+/* klikaci tlačítko */
+.bar{
+  display: block;
+  width: 25px;
+  height: 3.8px;
+  margin: 2.6px auto;
+  transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: var(--text-cerna);
+}
+
+.clanek a {
+  color: var(--url-color);
+  font-size: var(--text);
+}
+
+/* MENU pro mobily */
+@media screen and (max-width:768px){
+  .hamburger{
+    position: relative;
+    right: 0;
+    display: block;
+    padding: 3%;
+  }
+
+ .hamburger.active .bar{
+    transform:  rotate(180deg);
+    background-color: var(--text-cerna);
+    display: block;
+    
+  }
+  .MenuDiv{
+    text-align: center;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 1px 3px var(--text-cerna);
+    background-color: var(--pozadi-zluta);
+    }
+  
+ .nav-menu{
+    display: flex;
+    flex: 1 1 90rem;
+    position: fixed;
+    left: -100%;
+    flex-direction: column;
+    background-color: var(--pozadi-tmave);
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    font-size: var(--text);
+    text-decoration: dotted;
+    text-align: center;
+    transition: 0.3s;
+    justify-content: flex-start;
+    
+    
+  }
+  .navbar {
+    position: relative;
+    flex-wrap: nowrap;
+  }
+
+  .nav-menu.active{
+    left: 0%;
+    bottom: 0;
+  }
+ .nav-item{
+    margin: 3%;
+  }
+
+  .hledat {
+    padding: 3%;
+    padding-right: 10%;
+    display: flex;
+    justify-content: center;
+    font-size: var(--text);
+    background-color: var(--pozadi-tmave);
+    margin: 0;
+  }
+}
+
+footer {
+  padding-left: 3%;
+  padding-bottom: 1%;
+  background: var(--pozadi-tmave);
+  text-align: center;
+  
+}
+.footer2{
+  background-color: var(--pozadi-svetle);
+  text-align: center;
+  padding-top: 1%;
+}
+.footer-img{
+  width: 20%;
+  height: 20%;
+}
+
+footer h4 {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-size: var(--header4);
+  flex: 2 1 52rem;
+  color: var(--text-cerna);
+  
+} 
+
+/* galerie pro mobily */
+.grid-container {
+  padding-left: 2%;
+  text-align: center;
+  background-color: var(--pozadi-tmave);
+  
+}
+.grid-img {
+  width: 99%;
+}
+figcaption{
+  font-size: var(--text);
+  padding: 2%;
+} 
+/* zastupitelstvo pro mobily*/
+
+ .header-zast{
+  border: 0.5px black solid;
+  text-align: center;
+  font-size: var(--header1);
+  background-color: var(--pozadi-tmave);
+  padding-bottom: 1%;
+  padding-top: 2.5%;
+  padding:0.5%;
+}
+.flexbox-zast{
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 2%;
+ }
+.img-zast{
+  max-width: 50%;
+  display: block;
+  height: auto; 
+  margin: auto; 
+}
+/* Nastavení pro PC*/
+@media screen and (min-width:768px) {
+
+  .MenuDiv{
+    text-align: center;
+    top: 0;
+    box-shadow: 0px 1px 3px var(--text-cerna);
+    background-color: var(--pozadi-zluta);
+    }
+  
+
+.hledat {
+  float: right;
+  padding: 3%;
+  padding-right: 10%;
+  display: flex;
+  justify-content: right;
+  font-size: var(--text);
+  background-color: var(--pozadi-tmave);
+  margin: 0;
+}
+
+/* footer pro PC */
+footer {
+  background: var(--pozadi-tmave);
+  color: black;
+  padding: 2%;
+  
+}
+.flexbox {
+  display: flex;
+  border: 1px black solid;
+  padding: 2%;
+  
+}
+
+.box1 {
+  padding: 2%;
+  flex: 2;
+  text-align: left;
+  align-items: center;
+  }
+
+.box2 {
+  padding: 2%;
+  flex: 0.5;
+  
+}
+
+.box3 {
+  padding: 2%;
+  flex: 0.5;
+}
+
+.box4 {
+  padding: 2%;
+  flex: 0.5; 
+}
+
+.box5 {
+  padding: 2%;
+  flex: 2;
+  text-align: center;
+ }
+
+footer h4 {
+  font-family:'Times New Roman', Times, serif;
+  flex: 3 1 40rem;
+  font-size: var(--text);
+  padding-bottom: 10%;
+  color: var(--text-cerna);
+  
+}
+
+.footer2 {
+  text-align: center;
+  background:var(--pozadi-svetle);
+}
+.footer-img {
+  width: 60%;
+  height: auto;
+}
+
+/* galerie pro PC*/
+.grid-container{
+  padding-left: 5%;
+  background-color: var(--pozadi-tmave);
+  display: grid;
+  grid-column-gap: 1.5%;
+  grid-row-gap: 2%;
+  grid-template-rows: 12% 10% 10% 10%;
+  grid-template-columns: 31% 31% 31%;
+  grid-template-areas:
+  "grid-item1 grid-item2 grid-item2"
+  "grid-item3 grid-item3 grid-item4"
+  "grid-item5 grid-item5 grid-item4"
+  "grid-item6 grid-item7 grid-item8";
+}
+.grid-container p{
+  text-align: center;
+  font-size: var(--text);
+}
+.grid-img {
+  width: 100%;
+  height: 100%;
+}
+.grid-item1{
+  grid-area: grid-item1;
+}
+.grid-item2{
+  grid-area: grid-item2;
+}
+.grid-item3{
+  grid-area: grid-item3;
+}
+.grid-item4{
+  grid-area: grid-item4;
+}
+.grid-item5{
+  grid-area: grid-item5;
+}
+.grid-item6{
+  grid-area: grid-item6;
+}
+.grid-item7{
+  grid-area: grid-item7;
+}
+.grid-item8{
+  grid-area: grid-item8;
+}
+figcaption{
+  font-size: var(--text);
+}
+
+/* zastupitelstvo pro PC */
+.flexbox-zast{
+  flex-direction: row; 
+ }
+ 
+.header-zast{
+  border: 0.5px black solid;
+  text-align: center;
+  font-size: var(--header1);
+  background-color: var(--pozadi-tmave);
+  padding-bottom: 1%;
+  padding-top: 2.5%;
+  padding:0.5%;
+}
+
+.img-zast{
+  width: 100%;
+  height: 100%;
+ }
+
+
+}
+ .header-search {
+  font-weight: bold;
+  font-size: var(--header4);
+  border-bottom: 5px solid var(--pozadi-cervene); 
+  color: var(--pozadi-cervene)
+ }
+
+ .flexbox-zast{
+  align-items: center;
+  display:flex;
+  border: 1px black solid;
+  background: var(--pozadi-svetle);
+  justify-content: flex-start;
+}
+
+ .box-zast1{
+  padding-bottom:2%;
+  padding-top:2%;
+  
+   flex: 1.5;
+
+   
+  } 
+  
+  .box-zast2{
+   flex: 1.5;
+   font-size: var(--text);
+   background-color: var(--pozadi-svetle);
+   padding-bottom:2%;
+   padding-top:2%;
+   text-align:left;
+   vertical-align: top;
+ 
+  }
+ 
+ .box-zast3{
+     flex: 1.2;
+     font-size: var(--text);
+     font-style: italic; 
+     padding-bottom:2%;
+     padding-top:2%;
+ }
+ 
